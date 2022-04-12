@@ -7,6 +7,8 @@ const dotenv = require('dotenv');
 dotenv.config({ path: "./config.env" })
 // 資源庫
 const libs = require('./libs');
+// 回應控制
+const { errorHandler } = require('./responseHandler');
 
 //#region 連接資料庫
 // 遠端連線字串
